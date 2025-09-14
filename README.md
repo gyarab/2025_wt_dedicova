@@ -14,5 +14,5 @@ plnohodnotým profesorem.
 | 2002 - 2014 | Působení na Texas A&M University |
 | 2014 - 2022 | Práce v Morgan Stanley |
 
-! [](Bjarne_Stroustrup_(2013).jpg)
+!(Bjarne_Stroustrup_(2013).jpg)
 [Další informace](https://en.wikipedia.org/wiki/Bjarne_Stroustrup)
