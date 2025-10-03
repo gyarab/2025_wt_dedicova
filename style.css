@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: white;
+}
+h1 {
+    color: aqua;
+    font-weight: bold;
+}
+a {
+    color:aquamarine;
+    margin: 0 5px;
+}
+nav {
+    text-align: center;
+    font-weight: bold;
+}
+blockquote {
+    border-left: 5px solid aqua;
+}
