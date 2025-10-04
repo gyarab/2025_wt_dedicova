@@ -7,25 +7,69 @@
 
 <body>
     <header>
-        <nav>
-            <a href="./pokus.html">pokus 1</a>
-            <a href="./pokus2.html">pokus 2</a>
-            <a href="./index.html"> index </a>
+
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Index</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pokus.html">Pokus 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pokus2.html">Pokus 2</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
     </header>
     <h1> Nadpis stranky</h1>
     <div class="container">
-        <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam dictum tincidunt diam. Maecenas lorem.
-            Phasellus
-            faucibus molestie nisl. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Praesent id justo in
-            neque
-            elementum ultrices. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Aenean id metus id velit
-            ullamcorper pulvinar. Etiam dictum tincidunt diam. Praesent id justo in neque elementum ultrices. Donec
-            ipsum
-            massa, ullamcorper in, auctor et, scelerisque sed, est. Integer malesuada. Class aptent taciti sociosqu ad
-            litora torquent per conubia nostra, per inceptos hymenaeos. Phasellus rhoncus. Aenean placerat.
-        </p>
+        <div class="par">
+            <p>
+
+
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam dictum tincidunt diam. Maecenas lorem.
+                Phasellus
+                faucibus molestie nisl. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Praesent id justo
+                in
+                neque
+                elementum ultrices. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Aenean id metus id
+                velit
+                ullamcorper pulvinar. Etiam dictum tincidunt diam. Praesent id justo in neque elementum ultrices. Donec
+                ipsum
+                massa, ullamcorper in, auctor et, scelerisque sed, est. Integer malesuada. Class aptent taciti sociosqu
+                ad
+                litora torquent per conubia nostra, per inceptos hymenaeos. Phasellus rhoncus. Aenean placerat.
+            </p>
+        </div>
+        <style>
+            .par {
+                font-style: italic;
+            }
+        </style>
         <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam dictum tincidunt diam. Maecenas lorem.
             Phasellus
