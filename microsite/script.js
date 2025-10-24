@@ -5,13 +5,13 @@ button.addEventListener('click', function () {
     emailInput.value = "";
     textArea.value = "";
 });
-emailInput.addEventListener('keydown', function () {
+emailInput.addEventListener('keydown', function (event) {
     if (event.key === "Enter") {
         emailInput.value = "";
         textArea.value = "";
     }
 });
-textArea.addEventListener('keydown', function () {
+textArea.addEventListener('keydown', function (event) {
     if (event.key === "Enter" && event.shiftKey) {
         emailInput.value = "";
         textArea.value = "";
