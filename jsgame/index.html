@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Game</title>
+</head>
+
+<body>
+  <h1>JS Game</h1>
+  <p>Hadej cislo od 1 do 20</p>
+
+  <input id="newGameBtn" type="button" value="Nova hra" onclick="newGame()" />
+  <br />
+  <input id="guess" type="number" name="guess" />
+  <input id="guessBtn" type="button" value="Zkus" />
+
+  <p>Pocet pokusu <span id="attempts">0</span></p>
+
+  <script>
+    let secretNumber;
+    let attempts;
+    let aboveRange;
+    const attemptsEl = document.getElementById("attempts");
+
+    function newGame() {
+      secretNumber = Math.floor(Math.random() * 20) + 1;
+      attempts = 0;
+      attemptsEl.textContent = attempts;
+      aboveRange = 0;
+
+      console.log("--- NEW GAME ---");
+      console.log("tajne cislo je ", secretNumber);
+
+      function checkGuess() {
+        console.log("tip")
+        attempts++;
+        attemptsEl.textContent = attempts;
+        if (guess.value > 20 || guess.value < 1) {
+          alert("Vis, ze je rozsah od 1 do 20?")
+          console.log("above range")
+          aboveRange++;
+          if (aboveRange === 5) {
+            console.log("user doesn't respect the rules")
+            window.location.href = "https://www.umimematiku.cz/cviceni-porovnavani-cisel-do-100";
+          }
+          return;
+        }
+        if (secretNumber === guess.value) {
+          alert("VYHRAL JSI!!!");
+          console.log("vyhra")
+        }
+        if (guess.value > secretNumber) {
+          alert("Zkus mensi cislo :(")
+          console.log("vetsi cislo")
+        }
+        if (guess.value < secretNumber) {
+          alert("Zkus vetsi cislo :(")
+          console.log("mensi cislo")
+        }
+      }
+
+      document
+        .getElementById("guessBtn")
+        .addEventListener("click", function (e) {
+          checkGuess();
+          e.srcElement.value = "";
+        });
+      document
+        .getElementById("guess")
+        .addEventListener("keydown", function (e) {
+          if (e.key === "Enter") {
+            checkGuess();
+            e.srcElement.value = "";
+          }
+        });
+    }
+  </script>
+</body>
+
+</html>
